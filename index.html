@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="sk">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Topseriály</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="./styles.css"/>
+		<script src="./script.js"></script>
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container text-light ps-4 pe-4">
+			<!--Navbar-->
+			<nav class="py-2 navbar navbar-dark navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="./index.html">
+						Topseriály
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto"> <!--Pokrocily zoznam-->
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="./index.html">Domov</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./serialy.html">Seriály</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./kontakt.html">Napíš nám</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Kde nás nájdete
+								</a>
+								<!--Dropdown-->
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" target="_blank" href="https://www.facebook.com/">Facebook</a></li>
+								<li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/">Instagram</a></li>
+								<li><a class="dropdown-item" target="_blank" href="https://twitter.com/home">Twitter</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!--Koniec navbaru-->
+			<!--Carousel-->
+			<div id="carouselExampleIndicators" class="carousel slide rounded" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./images/arcane.jpg" class="w-100 mw-50 d-block" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="./images/squidgame.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="./images/mandalorian.jpg" class="d-block w-100" alt="...">
+					</div>
+				</div>
+
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<!--Serialy-->
+			<h2 class="mt-3 mb-3 d-inline-flex">Populárne seriály</h2> <!--nadpis-->
+			<a href="./serialy.html" class="text-muted d-inline-flex">Všetky seriály</a>
+			<div class="row">
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/arcanemin.jpg" class="img-fluid rounded" alt="Arcane"> <!--Responzivny obrazok-->
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Arcane</h5> <!--nadpis-->
+					<p class="nadpis2 d-inline-flex">(2021)</h5>
+					<p class="nadpis2">9.3 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p> <!--Inline zapis css-->
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/dexternewbloodmin.jpg" class="img-fluid rounded" alt="Dexter New Blood">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Dexter: New Blood</h5>
+					<p class="nadpis2 d-inline-flex">(2021)</h5>
+					<p class="nadpis2">9.0 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/moneyheistmin.jpg" class="img-fluid rounded" alt="Money Heist">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Money Heist</h5>
+					<p class="nadpis2 d-inline-flex">(2017)</h5>
+					<p class="nadpis2">8.2 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/breakingbadmin.jpg" class="img-fluid rounded" alt="Breaking bad">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Breaking Bad</h5>
+					<p class="nadpis2 d-inline-flex">(2008)</h5>
+					<p class="nadpis2">9.4 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/strangerthingsmin.jpg" class="img-fluid rounded" alt="Stringer Things">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Stranger Things</h5>
+					<p class="nadpis2 d-inline-flex">(2016)</h5>
+					<p class="nadpis2">8.7 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/hawkeyemin.jpg" class="img-fluid rounded" alt="Hawkeye">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Hawkeye</h5>
+					<p class="nadpis2 d-inline-flex">(2021)</h5>
+					<p class="nadpis2">8.1 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+			</div>
+			<!--Najlepsie hodnotene-->
+			<h2 class="mt-3 mb-3 d-inline-flex">Najlepšie hodnotené seriály</h2>
+			<div class="row">
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/planetearth2min.jpg" class="img-fluid rounded" alt="Planet Earth II.">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Planet Earth II.</h5>
+					<p class="nadpis2 d-inline-flex">(2016)</h5>
+					<p class="nadpis2">9.5 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/planetearthmin.jpg" class="img-fluid rounded" alt="Planet Earth">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					<h5 class="nadpis d-inline-flex">Planet Earth</h5>
+					<p class="nadpis2 d-inline-flex">(2006)</h5>
+					<p class="nadpis2">9.4 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/breakingbadmin.jpg" class="img-fluid rounded" alt="Breaking Bad">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					<h5 class="nadpis d-inline-flex">Breaking Bad</h5>
+					<p class="nadpis2 d-inline-flex">(2008)</h5>
+					<p class="nadpis2">9.4 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/bandofbrothersmin.jpg" class="img-fluid rounded" alt="Band of Brothers">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					<h5 class="nadpis d-inline-flex">Band of Brothers</h5>
+					<p class="nadpis2 d-inline-flex">(2001)</h5>
+					<p class="nadpis2">9.4 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/chernobylmin.jpg" class="img-fluid rounded" alt="Chernobyl">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					<h5 class="nadpis d-inline-flex">Chernobyl</h5>
+					<p class="nadpis2 d-inline-flex">(2019)</h5>
+					<p class="nadpis2">9.3 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/thewiremin.jpg" class="img-fluid rounded" alt="The Wire">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					<h5 class="nadpis d-inline-flex">The Wire</h5>
+					<p class="nadpis2 d-inline-flex">(2002)</h5>
+					<p class="nadpis2">9.3 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+			</div>
+			
+			<!--Footer-->
+			<footer class="text-center text-lg-start">
+			<!--Copyright-->
+				<div class="text-center p-3 text-light">
+				© 2021 Copyright: Patrik Horváth
+				</div>
+			<!--End Copyright-->
+			</footer>
+		  <!--End Footer-->
+		</div>
+	</body>
+</html>

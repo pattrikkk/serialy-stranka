@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="sk">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Topseriály</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="./styles.css"/>
+		<script src="./script.js"></script>
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container text-light ps-4 pe-4">
+			<!--Navbar-->
+			<nav class="py-2 navbar navbar-dark navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="./index.html">
+						Topseriály
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html">Domov</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./serialy.html">Seriály</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="./kontakt.html">Napíš nám</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Kde nás nájdete
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" target="_blank" href="https://www.facebook.com/">Facebook</a></li>
+								<li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/">Instagram</a></li>
+								<li><a class="dropdown-item" target="_blank" href="https://twitter.com/home">Twitter</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!--Koniec navbaru-->
+
+			<!--Basic info o tom co sa pozera (obrazok, meno serialu, cast, meno casti)-->
+            <div class="row">
+                <div class="col-1" style="width: 70px;">
+                    <img src="./images/arcanemin.jpg" alt="Arcane" class="img-fluid"> <!--Obrazok s pevne stanovenou vyskou a sirkou-->
+                </div>
+                <div class="col-9">
+                    <div class="d-inline-flex" style="margin-bottom: 0;" >Arcane</div>
+					<div class="nadpis2 d-inline-flex"> - s01e01</div>
+					<div class="nadpis2">Welcome to the Playground</div>
+					<button class="btn btn-link p-0"><a href="#" class="nadpis"><i class="fas fa-arrow-left"></i> Predchádzajúca ep.</a></button> <!--button-->
+					<button class="btn btn-link p-0"><a href="#" class="nadpis">Ďalšia ep. <i class="fas fa-arrow-right"></i></a></button> <!--button-->
+                </div>
+            </div>
+
+			<div class="container-fluid" style="background-color: rgb(20, 20, 20);">
+				<div class="row">
+					<!--Iframe na serial/film v tomto pripade len trailer-->				
+					<div class="col-12 col-xl-9 serialFrame">
+						<iframe width="100%" height="100%"
+						src="https://www.youtube.com/embed/4Ps6nV4wiCE">
+						</iframe>
+					</div>
+					<!--Collapse Serie-->
+					<div class="col-xl-3 vsetkySerie">
+						<div class="card">
+							<h5 class="mb-0">
+								<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="font-weight: 700; text-decoration: none;">
+								Séria 1
+								</button>
+							</h5>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body p-0 mb-0">
+									<div class="list-group list-group-numbered nadpis">
+										<a href="#" class="list-group-item list-group-item-action active">
+											1. Welcome to the Playground
+										</a>
+										<a href="#"" class="list-group-item list-group-item-action">
+											2. Some Mysteries Are Better Left Unsolved
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">
+											3. The Base Violence Necessary for Change
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">
+											4. Happy Progress Day!
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">
+											5. Everybody Wants to Be My Enemy
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">
+											6. When These Walls Come Tumbling Down
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">
+											7. The Boy Savior
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">
+											8. Oil and Water
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">
+											9. The Monster You Created
+										</a>
+									</div>
+								</div>
+							</div>
+					   	</div>
+					</div>
+				</div>
+			</div>
+			<h2 class="mt-3 mb-3 d-inline-flex">Mohlo by sa ti páčiť</h2>
+			<div class="row">
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/therookiemin.jpg" class="img-fluid rounded" alt="The Rookie">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">The Rookie</h5>
+					<p class="nadpis2 d-inline-flex">(2018)</h5>
+					<p class="nadpis2">8.0 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/dotamin.jpg" class="img-fluid rounded" alt="Dota: Dragon's blood">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Dota: Dragon's blood</h5>
+					<p class="nadpis2 d-inline-flex">(2021)</h5>
+					<p class="nadpis2">7.9 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/squidgamemin.jpg" class="img-fluid rounded" alt="Squid Game">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Squid Game</h5>
+					<p class="nadpis2 d-inline-flex">(2021)</h5>
+					<p class="nadpis2">8.1 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/breakingbadmin.jpg" class="img-fluid rounded" alt="Breaking bad">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Breaking Bad</h5>
+					<p class="nadpis2 d-inline-flex">(2008)</h5>
+					<p class="nadpis2">9.4 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/gameofthronesmin.jpg" class="img-fluid rounded" alt="Game of Thrones">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Game of Thrones</h5>
+					<p class="nadpis2 d-inline-flex">(2011)</h5>
+					<p class="nadpis2">9.2 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<div class="image-container">
+						<a href="./exampleserial.html">
+							<img src="./images/mandalorianmin.jpg" class="img-fluid rounded" alt="Mandalorian">
+							<div class="overlay"></div>
+						</a>
+					</div>
+					
+					<h5 class="nadpis d-inline-flex">Mandalorian</h5>
+					<p class="nadpis2 d-inline-flex">(2019)</h5>
+					<p class="nadpis2">8.8 <i class="fas fa-star" style="color: rgb(219, 219, 0)"></i></p>
+				</div>
+			</div>
+			<!--Footer-->
+			<footer class="text-center sticky-bottom text-lg-start">
+				<!--Copyright-->
+					<div class="text-center p-3 text-light">
+					© 2021 Copyright: Patrik Horváth
+					</div>
+				<!--End Copyright-->
+			</footer>
+			<!--End Footer-->
+		</div>
+	</body>
+</html>
